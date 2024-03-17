@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto eu</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <header class="cabecalho_header">
+    <img class="cabecalho_img" src="./img/alura2.png" alt="Logo"/>
+  </header>
+
+  <main class="conteudo_main">
+    <section class="conteudo_container">
+      <textarea class="conteudo_container_input" name="texto" id="texto" placeholder="Digite seu texto">
+      </textarea>
+      <p class="conteudo_container_texto">
+        <img src="./img/warning.svg" alt="Alerta!"/>Apenas letras minúsculas e sem acento
+      </p>
+      <div class="conteudo_botoes">
+        <button class="conteudo_botoes_principal" onclick="criptografar()">
+        Criptografar</button>
+        <button class="conteudo_botoes_secundario" onclick="descriptografar()">
+        Descriptografar</button>
+      </div>
+    </section>
+    <aside class="resultado">
+      <img id="imagem" class="resultado_imagem" src="./img/alura1.png" alt="sem texto"/>
+      <h2 id="titulo" class="resultado_titulo">
+        Nenhuma mensagem encontrada
+      </h2>
+      <p id="resultado_texto" class="resultado_texto">
+        Digite um texto que você deseja criptografar ou descriptografar
+      </p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Eduardo Henrique</p>
+  </footer>
+  <script src="./js/decodificador.js" defer></script>
+</body>
+</html>
